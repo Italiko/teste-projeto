@@ -11,5 +11,9 @@ def olá_mundo():
 def teste():
     return {"Teste": "testando"}
 
+@app.get("/aluno")
+def aluno():
+    return {"Nome": "Italo", "Turma": "IMI3"}
+
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port=8000)
